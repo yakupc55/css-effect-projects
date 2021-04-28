@@ -1,0 +1,29 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.box
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 509px;
+  background: url(sprite.png);
+  animation: animate 1s steps(10) infinite;
+}
+
+@keyframes animate
+{
+  from
+  {
+    background-position: 0px;
+  }
+  to
+  {
+    background-position: -2000px;
+  }
+}
